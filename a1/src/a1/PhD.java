@@ -2,9 +2,7 @@ package a1;
 
 public class PhD {
 
-	/** NetId: it233, acs299. Time spent: 2 hours, 5 minutes. */
-	/** An instance maintains info about the PhD of a person. */
-
+	
 	/** Month PhD awarded. In 1..12, with 1 meaning January, etc. */
 	private int month;
 	/** Year PhD awarded. */
@@ -17,8 +15,6 @@ public class PhD {
 	private PhD adname2;
 	/** Number of PhD advisee of this Person */
 	private int NumberOfAdvisees;
-
-	/** Group A Declaration */
 
 	/** Constructor: a PhD with PhD month m, PhD year y, and name n.<br>
 	 * The advisors are unknown, and there are 0 advisees.<br>
@@ -76,7 +72,7 @@ public class PhD {
 		return NumberOfAdvisees;
 	}
 
-	/** Group B Method Declaration */
+	
 
 	/** Make p the first advisor of this person.<br>
 	 * Precondition: the first advisor is unknown and p is not null. */
@@ -105,7 +101,7 @@ public class PhD {
 
 	}
 
-	/** Group C Method Declaration */
+	
 
 	/** Constructor: a PhD with PhD month m, PhD year y, name n, <br>
 	 * first advisor adv1, and no second advisor.<br>
@@ -152,7 +148,6 @@ public class PhD {
 
 	}
 
-	/** Group D */
 
 	/** Return value of: this PhD got the PhD after p.<br>
 	 * Precondition: p is not null. */
