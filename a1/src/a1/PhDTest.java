@@ -104,36 +104,36 @@ class PhDTest {
 		PhD P1= new PhD(5, 10, "Aman");
 		PhD P2= new PhD(2, 3, "Bob");
 
-		assertThrows(AssertionError.class, () -> { new PhD(2, 4, ""); });// Group A, checking person with PhD name>=1
-		assertThrows(AssertionError.class, () -> { new PhD(2, 4, null); }); // group A, checking if person's name is not
+		assertThrows(AssertionError.class, () -> { new PhD(2, 4, ""); });//  checking person with PhD name>=1
+		assertThrows(AssertionError.class, () -> { new PhD(2, 4, null); }); // checking if person's name is not
 																		    // null.
-		assertThrows(AssertionError.class, () -> { new PhD(13, 4, "Hello"); });// Group A, checking month <=12
-		assertThrows(AssertionError.class, () -> { new PhD(0, 4, "Hello"); });// Group A, checking month >=1
-		assertThrows(AssertionError.class, () -> { P1.setAdvisor1(null); });// Group B, checking object of PhD not null
-		assertThrows(AssertionError.class, () -> { P2.setAdvisor2(P1); });// Group B, checking if the first advisor is
+		assertThrows(AssertionError.class, () -> { new PhD(13, 4, "Hello"); });//  checking month <=12
+		assertThrows(AssertionError.class, () -> { new PhD(0, 4, "Hello"); });//  checking month >=1
+		assertThrows(AssertionError.class, () -> { P1.setAdvisor1(null); });// checking object of PhD not null
+		assertThrows(AssertionError.class, () -> { P2.setAdvisor2(P1); });//  checking if the first advisor is
 																		  // known
 
-		assertThrows(AssertionError.class, () -> { new PhD(2, 4, null, P2); }); // group C, checking if person's name is
+		assertThrows(AssertionError.class, () -> { new PhD(2, 4, null, P2); }); //  checking if person's name is
 																			    // not null.
-		assertThrows(AssertionError.class, () -> { new PhD(4, 5, "", P2); });// Group C, checking if name of person>=1
-		assertThrows(AssertionError.class, () -> { new PhD(13, 5, "Doe", P1); });// Group C, checking month <=12
-		assertThrows(AssertionError.class, () -> { new PhD(-1, 5, "Doe", P1); });// Group C, checking month >=1
-		assertThrows(AssertionError.class, () -> { new PhD(2, 4, "Bob", null); });// Group C, checking if object of PhD
+		assertThrows(AssertionError.class, () -> { new PhD(4, 5, "", P2); });//  checking if name of person>=1
+		assertThrows(AssertionError.class, () -> { new PhD(13, 5, "Doe", P1); });//  checking month <=12
+		assertThrows(AssertionError.class, () -> { new PhD(-1, 5, "Doe", P1); });// checking month >=1
+		assertThrows(AssertionError.class, () -> { new PhD(2, 4, "Bob", null); });// checking if object of PhD
 																				  // is not null
-		assertThrows(AssertionError.class, () -> { new PhD(4, 5, "", P1, P2); }); // Group C, checking if name of
+		assertThrows(AssertionError.class, () -> { new PhD(4, 5, "", P1, P2); }); // checking if name of
 																				  // person>=1 for second function
-		assertThrows(AssertionError.class, () -> { new PhD(15, 5, "Ben", P1, P2); });// Group C, checking if month<=12
-		assertThrows(AssertionError.class, () -> { new PhD(-2, 5, "Ben", P1, P2); });// Group C, checking if month>=1
-		assertThrows(AssertionError.class, () -> { new PhD(12, 4, "b", null, P1); });// Group C, checking object not
+		assertThrows(AssertionError.class, () -> { new PhD(15, 5, "Ben", P1, P2); });// checking if month<=12
+		assertThrows(AssertionError.class, () -> { new PhD(-2, 5, "Ben", P1, P2); });// checking if month>=1
+		assertThrows(AssertionError.class, () -> { new PhD(12, 4, "b", null, P1); });//  checking object not
 																					 // null
-		assertThrows(AssertionError.class, () -> { new PhD(11, 1, "a", P1, null); });// Group C, checking second object
+		assertThrows(AssertionError.class, () -> { new PhD(11, 1, "a", P1, null); });// checking second object
 																					 // not null
-		assertThrows(AssertionError.class, () -> { new PhD(11, 12, "c", P1, P1); });// Group C, checking if both objects
+		assertThrows(AssertionError.class, () -> { new PhD(11, 12, "c", P1, P1); });//  checking if both objects
 																					// are not the same.
 
-		assertThrows(AssertionError.class, () -> { new PhD(2, 4, null, P1, P2); }); // group A, checking if person's
+		assertThrows(AssertionError.class, () -> { new PhD(2, 4, null, P1, P2); }); // checking if person's
 																				    // name is not null.
-		assertThrows(AssertionError.class, () -> { P1.gotAfter(null); });// Group D, checking if object is not null
+		assertThrows(AssertionError.class, () -> { P1.gotAfter(null); });//  checking if object is not null
 
 	}
 
