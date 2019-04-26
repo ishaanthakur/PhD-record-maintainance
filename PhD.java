@@ -1,7 +1,7 @@
 
 public class PhD {
 
-	/** NetId: it233, acs299. Time spent: 2 hours, 5 minutes. */
+	
 	/** An instance maintains info about the PhD of a person. */
 
 	/** Month PhD awarded. In 1..12, with 1 meaning January, etc. */
